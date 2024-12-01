@@ -58,7 +58,7 @@ Review the resources to be created:
 ```bash
 terraform plan
 ```
-## 6. Apply the Configuration
+### 6. Apply the Configuration
 
 Deploy the infrastructure:
 
