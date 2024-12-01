@@ -6,8 +6,7 @@ resource "azurerm_sql_server" "sql_server" {
   version                      = "12.0"
   administrator_login          = var.sql_admin_username
   administrator_login_password = azurerm_key_vault_secret.sql_admin_password.value
-
-  # Allow Azure services to access the server
+# Allow Azure services to access the server
   public_network_access_enabled = true
 }
 
