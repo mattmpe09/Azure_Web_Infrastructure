@@ -3,7 +3,6 @@ resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
   location = var.location
 }
-
 # Azure Key Vault
 resource "azurerm_key_vault" "kv" {
   name                        = "kv-${var.resource_group_name}"
