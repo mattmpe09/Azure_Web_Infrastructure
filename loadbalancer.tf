@@ -52,7 +52,6 @@ resource "azurerm_lb_rule" "lb_rule" {
   backend_address_pool_id        = azurerm_lb_backend_address_pool.lb_backend_pool.id
   probe_id                       = azurerm_lb_probe.lb_probe.id
 }
-
 # Associate VMs with Load Balancer Backend Pool
 resource "azurerm_network_interface_backend_address_pool_association" "lb_backend_assoc" {
   count                    = 2
