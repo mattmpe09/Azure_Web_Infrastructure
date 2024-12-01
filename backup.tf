@@ -6,7 +6,6 @@ resource "azurerm_recovery_services_vault" "backup_vault" {
   resource_group_name = azurerm_resource_group.rg.name
   sku                 = "Standard"
 }
-
 # Backup Policy for VMs
 resource "azurerm_backup_policy_vm" "vm_backup_policy" {
   name                = "vm-backup-policy"
