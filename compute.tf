@@ -50,7 +50,6 @@ resource "azurerm_windows_virtual_machine" "web_vm" {
     version   = "latest"
   }
 }
-
 # Network Interface for Database VM
 resource "azurerm_network_interface" "db_nic" {
   name                = "db-nic"
