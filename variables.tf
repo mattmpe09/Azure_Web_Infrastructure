@@ -23,7 +23,6 @@ variable "sql_admin_username" {
   description = "Admin username for SQL Server"
   default     = "sqladminuser"
 }
-
 variable "sql_admin_password" {
   description = "Admin password for SQL Server"
   type        = string
